@@ -17,6 +17,11 @@ body {
     line-height: 1.6;
 }
 
+.content-wrap {
+    width: 950px;
+    margin: 0 auto;
+}
+
 h1,
 h2,
 h3 {
