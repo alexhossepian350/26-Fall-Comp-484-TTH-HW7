@@ -13,11 +13,13 @@
     <!-- // Intro -->
     <header>
         <div class="content-wrap">
-            <img class="profile-img" src="images/Alex Photo.png" alt="Profile photo">
-            <h1>Alex Hossepian</h1>
-            <h2>IT Analyst Intern &amp; Cybersecurity Student</h2>
-            <p>Computer Information Technology student at California State University, Northridge, graduating May 2027, with hands-on experience in systems administration, networking, and CMMC compliance in a regulated aerospace environment.</p>
-            <p>CompTIA Security+ certified. Outside of work I run a homelab security operations center and build projects like an AWS honeypot and a WireGuard VPN.</p>
+            <img class="profile-img column-narrow" src="images/Alex Photo.png" alt="Profile photo">
+            <div class="column-wide">
+                <h1>Alex Hossepian</h1>
+                <h2>IT Analyst Intern &amp; Cybersecurity Student</h2>
+                <p>Computer Information Technology student at California State University, Northridge, graduating May 2027, with hands-on experience in systems administration, networking, and CMMC compliance in a regulated aerospace environment.</p>
+                <p>CompTIA Security+ certified. Outside of work I run a homelab security operations center and build projects like an AWS honeypot and a WireGuard VPN.</p>
+            </div>
         </div>
     </header>
 
@@ -28,22 +30,26 @@
                 <h2>Work Experience</h2>
 
                 <!-- Job Details: copy this whole block to add more jobs -->
-                <h3>Information Technology Analyst Intern</h3>
-                <p>Parker Meggitt Aerospace - Simi Valley, CA</p>
-                <p>January 2026 - Present</p>
+                <div class="column-narrow">
+                    <h3>Information Technology Analyst Intern</h3>
+                    <p>Parker Meggitt Aerospace - Simi Valley, CA</p>
+                    <p>January 2026 - Present</p>
+                </div>
 
-                <!-- Add as many paragraphs as you need. -->
-                <p>Systems administration, networking, and compliance support in a regulated aerospace environment.</p>
+                <div class="column-wide">
+                    <!-- Add as many paragraphs as you need. -->
+                    <p>Systems administration, networking, and compliance support in a regulated aerospace environment.</p>
 
-                <!-- This list can be deleted if you don't want to use it. -->
-                <p>Key contributions:</p>
-                <ul>
-                    <li>Built a PowerShell script standardizing workstation backups to a hardened SMB share across 100+ endpoints, replacing a manual process and producing audit trails for CMMC compliance review</li>
-                    <li>Administered Active Directory across the enterprise domain: joined 200+ machines, provisioned accounts, and assigned group-based permissions following least privilege</li>
-                    <li>Configured enterprise Cisco switches including VLAN assignment, port security, and trunk links to segment network traffic</li>
-                    <li>Aided CMMC Level 2 compliance efforts, applying access control and documentation practices to meet audit requirements</li>
-                    <li>Triaged and documented 20+ tickets weekly, escalating with reproducible notes for senior engineers</li>
-                </ul>
+                    <!-- This list can be deleted if you don't want to use it. -->
+                    <p>Key contributions:</p>
+                    <ul>
+                        <li>Built a PowerShell script standardizing workstation backups to a hardened SMB share across 100+ endpoints, replacing a manual process and producing audit trails for CMMC compliance review</li>
+                        <li>Administered Active Directory across the enterprise domain: joined 200+ machines, provisioned accounts, and assigned group-based permissions following least privilege</li>
+                        <li>Configured enterprise Cisco switches including VLAN assignment, port security, and trunk links to segment network traffic</li>
+                        <li>Aided CMMC Level 2 compliance efforts, applying access control and documentation practices to meet audit requirements</li>
+                        <li>Triaged and documented 20+ tickets weekly, escalating with reproducible notes for senior engineers</li>
+                    </ul>
+                </div>
                 <!-- end of Job Details block. -->
 
             </div>
@@ -63,12 +69,23 @@
                 <!-- Add as many paragraphs as you need. -->
                 <p>Coursework: Network Security, Cloud Security, Network Automation, Systems Administration</p>
                 <!-- End of school details. -->
+            </div>
+        </section>
 
-                <!-- Certification details -->
-                <h3>Certifications</h3>
-                <p>CompTIA Security+ (SY0-701) <br>July 2026</br></p>
-                <p>Controlled Unclassified Information (CUI) Training <br>March 2026</br></p>
+
+        <!-- // Certifications -->
+        <!-- I wanted to make certifications its own section because to me I want to display that outside of just education. I wanted to also make it slightly different than other people's. -->
+        <section class="certifications">
+            <div class="content-wrap">
+                <h2>Certifications</h2>
+
+                <!-- Certification details: copy this whole block to add more certifications. -->
+                <h3>CompTIA Security+ (SY0-701)</h3>
+                <p>July 2026</p>
                 <!-- End of certification details. -->
+
+                <h3>Controlled Unclassified Information (CUI) Training</h3>
+                <p>March 2026</p>
             </div>
         </section>
     </main>

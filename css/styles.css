@@ -3,6 +3,7 @@
 #415A77 - color 2 (slate blue: education background)
 #778DA9 - color 3 (steel blue: links & accents)
 #E0E1DD - color 4 (off white: work experience background, light text)
+#B4C2D3 - color 5 (light blue: certifications background)
 */
 
 /* Global styles
@@ -34,6 +35,19 @@ body {
     margin: 0 auto;
     padding: 50px;
     overflow: hidden;
+}
+
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
 }
 
 h1,
@@ -70,7 +84,7 @@ b {
 }
 
 section h2 {
-    display: inline-block;
+    width: fit-content;
     margin: 0;
     padding-bottom: 8px;
     border-bottom: 4px solid #778DA9;
@@ -100,11 +114,7 @@ header h2 {
 }
 
 .profile-img {
-    width: 300px;
-    border: 4px solid #778DA9;
     border-radius: 50%;
-    float: left;
-    margin-right: 30px;
 }
 
 header h2 {
@@ -150,6 +160,14 @@ footer p {
     color: #0D1B2A;
 }
 
+.work-experience h2 {
+    margin-bottom: 32px;
+}
+
+.column-narrow h3 {
+    margin-top: 0;
+}
+
 /* Company line and date line right under the job title */
 .work-experience h3 + p {
     font-weight: 600;
@@ -170,6 +188,18 @@ footer p {
 
 .education h2 {
     border-bottom-color: #E0E1DD;
+}
+
+
+/* Certifications
+------------------------------------*/
+.certifications {
+    background: #B4C2D3;
+    color: #0D1B2A;
+}
+
+.certifications h2 {
+    border-bottom-color: #0D1B2A;
 }
 
 
