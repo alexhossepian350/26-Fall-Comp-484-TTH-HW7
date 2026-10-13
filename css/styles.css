@@ -15,11 +15,13 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.6;
+    margin: 0;
 }
 
 .content-wrap {
     max-width: 950px;
     margin: 0 auto;
+    padding: 50px;
 }
 
 h1,
@@ -38,6 +40,7 @@ h1 {
 h2 {
     font-size: 32px;
     font-weight: 500;
+    margin-top: 0;
 }
 
 h3 {
@@ -95,6 +98,10 @@ header p:last-child {
     margin-bottom: 0;
 }
 
+footer {
+    text-align: center;
+}
+
 footer h2 {
     margin: 0 0 24px;
 }
@@ -102,7 +109,11 @@ footer h2 {
 footer a {
     color: #778DA9;
     font-weight: 600;
-    margin: 0 12px;
+}
+
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
 }
 
 footer a:hover {
@@ -160,10 +171,5 @@ footer p {
 
     h1 {
         font-size: 40px;
-    }
-
-    footer a {
-        display: block;
-        margin: 8px 0;
     }
 }
